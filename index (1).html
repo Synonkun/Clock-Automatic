@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Preloader Using jQuery & Css</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript">
+  //script preloader
+   (function( $ ) {  	
+	    $(window).on('load', function(){
+	    	$('#preloader').delay(4500).fadeOut('slow',function(){
+	            $(this).hide();
+	        });
+	    });
+
+    })(jQuery);
+
+   //slow bisa diganti dengan angka misal 2000 
+  </script>
+  <script type="text/javascript">
+  /* var name = prompt("What Your Name ?");
+  if (name == false) {
+  name = "You";
+  }
+  else if (name == "null") {
+  name = "You";
+  } */
+  var name = "Tika";
+  function exit() {
+  var exit = confirm("Are you sure for exit from website ?");
+  if (exit == true) {
+  window.alert("Thanks for visit this website")
+  window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=Hello");
+  }
+  else {
+  window.alert("Thanks for stay in here ;)")
+  }
+  };
+  </script>
+  </head>
+  <body id="body">
+  <!-- Home -->
+  <div class="heading">
+  <div class="container">
+  <h1 id="Clock"></h1>
+  <h3 class="cd-headline clip is-full-width">
+  <span style="font-weight: bold; text-transform: uppercase;">
+  Hy Tika,
+  </span><br>
+  <span class="cd-words-wrapper">
+  <b class="is-visible">Never Give Up</b>
+  <b>Don't Create Limited</b>
+  <b>You Are The Best</b>
+  <b>God Bless You</b>
+  </span>
+  </h3>
+  <button class="btn btn-danger" onclick="exit()">Reply Message</button>
+  </div>
+  <!--  End Container -->
+  </div>
+<div id="preloader">
+	<div class="socket">
+		<img src="Bar.gif" alt="">
+		<h1>Loading</h1>
+	</div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- ALL JS FILES -->
+<script src="all.js"></script>
+<script src="jam.js"></script>
+<script src="headline.js"></script>
+<!-- ALL PLUGINS -->
+<script src="custom.js"></script>
+</body>
+</html>
