@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
   <title>Cool - Times</title>
+<link rel="icon" type="image/png" href="20200331_162016.png" >
+<meta name="description" content="Cool - Times" >
+	
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
@@ -10,7 +13,7 @@
   //script preloader
    (function( $ ) {  	
 	    $(window).on('load', function(){
-	    	$('#preloader').delay(4500).fadeOut('slow',function(){
+	    	$('#preloader').delay(2000).fadeOut('slow',function(){
 	            $(this).hide();
 	        });
 	    });
@@ -20,19 +23,19 @@
    //slow bisa diganti dengan angka misal 2000 
   </script>
   <script type="text/javascript">
-  /* var name = prompt("What Your Name ?");
+   var name = prompt("What Your Name ?");
   if (name == false) {
   name = "You";
   }
   else if (name == "null") {
   name = "You";
-  } */
-  var name = "Tika";
+  } 
+
   function exit() {
   var exit = confirm("Are you sure for exit from website ?");
   if (exit == true) {
   window.alert("Thanks for visit this website")
-  window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=Hello");
+  window.location.href = ("https://api.whatsapp.com/send?phone=+6283119229613&text=I'm Exit");
   }
   else {
   window.alert("Thanks for stay in here ;)")
@@ -47,7 +50,9 @@
   <h1 id="Clock"></h1>
   <h3 class="cd-headline clip is-full-width">
   <span style="font-weight: bold; text-transform: uppercase;">
-  Hy Tika,
+  <script>
+	  document.write("Hy" + name) ;
+	</script>
   </span><br>
   <span class="cd-words-wrapper">
   <b class="is-visible">Never Give Up</b>
@@ -56,14 +61,15 @@
   <b>God Bless You</b>
   </span>
   </h3>
-  <!--<button class="btn btn-danger" onclick="exit()">Reply Message</button>-->
-  <a href="sunin.png" download><button class="btn btn-danger">Reply Message</button></a>
+  <button class="btn btn-danger" onclick="exit()">Exit &rrar;</button>
+  <!--
+	<a href="sunin.png" download><button class="btn btn-danger">Reply Message</button></a>-->
   </div>
   <!--  End Container -->
   </div>
 <div id="preloader">
 	<div class="socket">
-		<img src="Bar.gif" alt="">
+		<h1>Wait a Minute</h1>
 		<h1>Loading</h1>
 	</div>
 </div>
