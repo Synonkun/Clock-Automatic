@@ -13,7 +13,7 @@
   //script preloader
    (function( $ ) {  	
 	    $(window).on('load', function(){
-	    	$('#preloader').delay(2000).fadeOut('slow',function(){
+	    	$('#preloader').fadeOut('slow',function(){
 	            $(this).hide();
 	        });
 	    });
@@ -22,15 +22,9 @@
 
    //slow bisa diganti dengan angka misal 2000 
   </script>
-  <script type="text/javascript">
-   var name = prompt("What Your Name ?");
-  if (name == false) {
-  name = "You";
-  }
-  else if (name == "null") {
-  name = "You";
-  } 
 
+<script>
+var name
   function exit() {
   var exit = confirm("Are you sure for exit from website ?");
   if (exit == true) {
