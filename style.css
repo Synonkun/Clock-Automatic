@@ -7,6 +7,7 @@ body {
 	background-image: url(99-films-Rd18pDlzcik-unsplash.jpg);
 	background-size: cover;
 	background-attachment: fixed;
+	background-repeat:no-repeat;
 	text-align: left;
 	font-family: 'Roboto Mono', monospace;
 	padding-left: -15px;
