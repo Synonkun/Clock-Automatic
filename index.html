@@ -13,7 +13,7 @@
   //script preloader
    (function( $ ) {  	
 	    $(window).on('load', function(){
-	    	$('#preloader').fadeOut('slow',function(){
+	    	$('#preloader').delay(500).fadeOut('slow',function(){
 	            $(this).hide();
 	        });
 	    });
