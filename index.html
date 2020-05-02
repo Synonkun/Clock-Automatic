@@ -11,20 +11,22 @@
   <script src="jquery.min.js"></script>
   <script type="text/javascript">
   //script preloader
-   (function( $ ) {  	
-	    $(window).on('load', function(){
-	    	$('#preloader').delay(500).fadeOut('slow',function(){
-	            $(this).hide();
-	        });
-	    });
-
+   <script type="text/javascript">
+    //script preloader
+    (function( $ ) {  	
+    $(window).on('load', function(){
+    $('#preloader').delay(1000).fadeOut('slow',function(){
+    $(this).hide();
+    });
+    });
+    
     })(jQuery);
 
    //slow bisa diganti dengan angka misal 2000 
   </script>
 
 <script>
-var name = "Loserrr";
+var name = "People";
   function exit() {
   var exit = confirm("Are you sure for exit from website ?");
   if (exit == true) {
