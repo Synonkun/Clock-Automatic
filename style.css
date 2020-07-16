@@ -1,6 +1,7 @@
 /* SAAT MENGGUNAKAN HURUF DITERAKHIR DIV GUNAKAN MARGIN-BOTTOM:0PX; ATAU MEMBERI DIA DIV ROW */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
 body {
+	margin:0;
 	width: 100% ;
 	height: 100vh !important;
 	position: relative;
@@ -17,16 +18,7 @@ body {
 }
 h5 {	
 text-align:center;
-
 	}
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .heading{
 	color: #fff;
 	z-index: 1;
@@ -41,58 +33,51 @@ text-align:center;
 }
 .heading h3{
 	color: ffffff;
+	font-size:19px;
 }
 
 /*** Preloaders ***/
 #preloader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 99999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #201F1E none repeat scroll 0% 0%;
-    display:flex;
-	justify-content:center;
-	align-items:center;
-}
-.socket {
-    position: relative;
-    width: auto;
-    height: auto;
-    margin: auto;
-    display:block;
-}
-.socket img{
-  display:block;
-  margin:auto;
-}
-.socket h1{
-	color:white;
-	text-transform:uppercase;
-	text-align:center;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #0F1215;
+		z-index: 9999999;
+		height: 100%;
+		width: 100%;
 	}
-@keyframes ld-skew {
-
-  0%, 50%, 100% { animation-timing-function: cubic-bezier(0.4,0,1,0.6) }
-
-  25%, 75% {      animation-timing-function: cubic-bezier(0,0.4,0.6,1) }
-
-    0% { transform: skewX(20deg) scale(1) }
-
-   25% { transform: skewX(0deg) scale(0.9) }
-
-   50% { transform: skewX(-20deg) scale(1) }
-
-   75% { transform: skewX(0deg) scale(0.9) }
-
-  100% { transform: skewX(20deg) scale(1) }
-
-}
-
-.ld.ld-skew {
-
-  animation: ld-skew 1s infinite linear; ; 
-
-}
+	#loader {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		padding: 0;
+		background-color: #fb2a47;
+		border-radius: 100%;
+		-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+		animation: sk-scaleout  1s alternate infinite ease-in-out;
+	}
+	@-webkit-keyframes sk-scaleout {
+		0% {
+			-webkit-transform: scale(0);
+		}
+		100% {
+			-webkit-transform: scale(1);
+			opacity: 0;
+		}
+	}
+	@keyframes sk-scaleout {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		100% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			opacity: 0;
+		}
+	}
