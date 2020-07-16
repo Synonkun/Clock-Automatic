@@ -95,12 +95,12 @@ text-align:center;
     height: 100%;
     overflow: visible;
     background: #201F1E none repeat scroll 0% 0%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .socket {
     position: relative;
-    display:flex;
-	justify-content:center;
-	align-aitems:center;
     width: auto;
     height: auto;
     margin: auto;
