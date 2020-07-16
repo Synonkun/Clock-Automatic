@@ -1,5 +1,9 @@
 /* SAAT MENGGUNAKAN HURUF DITERAKHIR DIV GUNAKAN MARGIN-BOTTOM:0PX; ATAU MEMBERI DIA DIV ROW */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700');
+html {
+	margin:0;
+	padding:0;
+}
 body {
 	margin:0;
 	padding:0;
@@ -17,6 +21,24 @@ body {
 	align-items:center;
 	overflow:hidden !important;
 }
+#body {
+	margin:0;
+	padding:0;
+	width: 100% ;
+	height: 100vh;
+	background-image: url(99-films-Rd18pDlzcik-unsplash.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	backgrond-position:center;
+	text-align: center;
+	font-family: 'Roboto Mono', monospace;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden !important;
+}
+
 h5 {	
 text-align:center;
 	}
