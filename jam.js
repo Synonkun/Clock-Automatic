@@ -3,7 +3,7 @@ function tick()
     var hours, minutes, seconds, ap, br, say, back;
     var intHours, intMinutes, intSeconds;
     var today;
-    var bg = document.getElementById('body');
+    var bg = document.getElementByTagName('body');
     today = new Date();
     
     intHours = today.getHours();
