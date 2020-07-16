@@ -96,8 +96,8 @@ text-align:center;
     overflow: visible;
     background: #201F1E none repeat scroll 0% 0%;
     display:flex;
-    justify-content:center;
-    align-items:center;
+	justify-content:center;
+	align-items:center;
 }
 .socket {
     position: relative;
