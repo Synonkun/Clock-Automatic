@@ -18,7 +18,7 @@ function tick()
     say = "Good Morning";
     br = "<br>";
     user = name;
-    bg.style.backgroundImage = "url(99-films-Rd18pDlzcik-unsplash.jpg)";
+    
     }
     else if (intHours < 12)
     { 
@@ -28,7 +28,7 @@ function tick()
     say = "Good Morning";
     br = "<br>";
     user = name;
-    bg.style.backgroundImage = "url(99-films-Rd18pDlzcik-unsplash.jpg)";
+    
     } 
     else if (intHours < 15) {
     hours = intHours+":";
@@ -38,7 +38,7 @@ function tick()
     br = "<br>";
     user = name;
     /* Memberi background saat siang */
-    bg.style.backgroundImage = "url(tyler-franta-iusJ25iYu1c-unsplash.png)";
+   
     }
     else if (intHours < 18) {
     hours = intHours+":";
@@ -47,7 +47,6 @@ function tick()
     say = "Good Evening";
     br = "<br>";
     user = name;
-    bg.style.backgroundImage = "url(iler-stoe-yydI2Op7ILs-unsplash.jpg)";
     }
     else
     {
@@ -58,7 +57,6 @@ function tick()
     say = "Good Night";
     br = "<br>";
     user = name;
-    bg.style.backgroundImage = "url(todd-trapani-88iVApDoLmU-unsplash.jpg)";
     }
     
     if (intMinutes < 10) 
